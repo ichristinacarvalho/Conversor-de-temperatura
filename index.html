@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Conversor de temperatura</h1>
+        <p>Conversão de valores Celsius em valores Fahrenheit e valores Fahrenheit em valores Celsius.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Área de cálculo</h2>
+
+            <label for="valor">Valor:</label>
+            <input id="valor" name="valor" type="number" placeholder="Ex: 30" required>
+
+            <select id="tipo" required>
+                <option value="">Selecione a temperatura</option>
+                <option value="celsius" >Celsius</option>
+                <option value="fahrenheit" >Fahrenheit</option>
+            </select>
+
+            <button type="button" onclick="converter()">Converter</button>
+            <button type="button" onclick="limparCampos()">Limpar campos</button>
+        </section>
+
+        <section>
+            <h2>Resultado</h2>
+
+            <p id="resultado"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
